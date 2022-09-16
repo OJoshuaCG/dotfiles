@@ -1,0 +1,68 @@
+{
+  "[html]": {
+      "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "auto-rename-tag.activationOnLanguage": [
+      "html",
+      "xml",
+      "php",
+      "javascript"
+  ],
+  "breadcrumbs.enabled": false,
+  "code-runner.executorMap": {
+      "bat": "cmd /c",
+      "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+      "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+      "csharp": "dotnet run",
+      "dart": "dart",
+      "fsharp": "fsi",
+      "go": "go run",
+      "java": "cd $dir && javac $fileName && cls && java $fileNameWithoutExt ",
+      "javascript": "node",
+      "lua": "lua",
+      "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+      "php": "php",
+      "powershell": "powershell -ExecutionPolicy ByPass -File",
+      "python": "python -u",
+      "r": "Rscript",
+      "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+      "sass": "sass --style expanded",
+      "scheme": "csi -script",
+      "scss": "scss --style expanded",
+      "shellscript": "bash",
+      "swift": "swift",
+      "typescript": "ts-node",
+      "vbscript": "cscript //Nologo"
+  },
+  "code-runner.runInTerminal": true,
+  "dimmer.opacity": 30,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.fontFamily": "Cascadia Code",
+  "editor.fontLigatures": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.minimap.enabled": false,
+  "editor.mouseWheelZoom": true,
+  "editor.tabSize": 2,
+  "files.exclude": {
+      "*.meta": true,
+      "*.sln": true,
+      "**/.classpath": true,
+      "**/.factorypath": true,
+      "**/.project": true,
+      "**/.settings": true
+  },
+  "keyboard.dispatch": "keyCode",
+  "lifeline.clock.format": "h:mm A",
+  "markdown.extension.print.theme": "dark",
+  "prettier.tabWidth": 4,
+  "security.workspace.trust.untrustedFiles": "open",
+  "terminal.integrated.defaultProfile.windows": "Command Prompt",
+  "terminal.integrated.fontFamily": "Hack Nerd Font",
+  "terminal.integrated.fontSize": 16,
+  "window.restoreWindows": "none",
+  "workbench.iconTheme": "material-icon-theme",
+  "[javascriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.colorTheme": "Ayu Dark Bordered"
+}
