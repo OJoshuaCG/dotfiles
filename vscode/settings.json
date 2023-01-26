@@ -1,79 +1,115 @@
 {
-    "[html]": {
-        "editor.defaultFormatter": "vscode.html-language-features"
-    },
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[javascriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[jsonc]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[markdown]": {
-        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
-    },
-    "auto-rename-tag.activationOnLanguage": [
-        "html",
-        "xml",
-        "php",
-        "javascript"
-    ],
-    "breadcrumbs.enabled": false,
-    "code-runner.executorMap": {
-        "bat": "cmd /c",
-        "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-        "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-        "csharp": "dotnet run",
-        "dart": "dart",
-        "fsharp": "fsi",
-        "go": "go run",
-        "java": "cd $dir && javac $fileName && cls && java $fileNameWithoutExt ",
-        "javascript": "node",
-        "lua": "lua",
-        "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-        "php": "php",
-        "powershell": "powershell -ExecutionPolicy ByPass -File",
-        "python": "python -u",
-        "r": "Rscript",
-        "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
-        "sass": "sass --style expanded",
-        "scheme": "csi -script",
-        "scss": "scss --style expanded",
-        "shellscript": "bash",
-        "swift": "swift",
-        "typescript": "ts-node",
-        "vbscript": "cscript //Nologo"
-    },
-    "code-runner.runInTerminal": true,
-    "dimmer.opacity": 30,
-    "editor.bracketPairColorization.enabled": true,
-    "editor.fontFamily": " Cascadia Code, JetBrains Mono, Fira Code",
-    "editor.fontLigatures": true,
-    "editor.guides.bracketPairs": "active",
-    "editor.minimap.enabled": false,
-    "editor.mouseWheelZoom": true,
-    "editor.stickyScroll.enabled": true,
-    "editor.tabSize": 2,
-    "files.exclude": {
-        "*.meta": true,
-        "*.sln": true,
-        "**/.classpath": true,
-        "**/.factorypath": true,
-        "**/.project": true,
-        "**/.settings": true
-    },
-    "keyboard.dispatch": "keyCode",
-    "lifeline.clock.format": "h:mm A",
-    "markdown.extension.print.theme": "dark",
-    "prettier.tabWidth": 4,
-    "security.workspace.trust.untrustedFiles": "open",
-    "terminal.integrated.defaultProfile.windows": "PowerShell",
-    "terminal.integrated.fontFamily": "Hack Nerd Font",
-    "terminal.integrated.fontSize": 16,
-    "window.restoreWindows": "none",
-    "workbench.activityBar.visible": false,
-    "workbench.colorTheme": "Ayu Dark Bordered",
-    "workbench.iconTheme": "material-icon-theme"
+	"[html]": {
+		"editor.defaultFormatter": "vscode.html-language-features"
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[javascriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[markdown]": {
+		"editor.defaultFormatter": "yzhang.markdown-all-in-one"
+	},
+	"auto-rename-tag.activationOnLanguage": [
+		"html",
+		"javascript",
+		"javascriptreact",
+		"php",
+		"xml"
+	],
+	"breadcrumbs.enabled": true,
+	"code-runner.executorMap": {
+		"bat": "cmd /c",
+		"c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+		"cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+		"csharp": "dotnet run",
+		"dart": "dart",
+		"fsharp": "fsi",
+		"go": "go run",
+		"java": "cd $dir && javac $fileName && cls && java $fileNameWithoutExt ",
+		"javascript": "node",
+		"lua": "lua",
+		"objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+		"php": "php",
+		"powershell": "powershell -ExecutionPolicy ByPass -File",
+		"python": "python -u",
+		"r": "Rscript",
+		"rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+		"sass": "sass --style expanded",
+		"scheme": "csi -script",
+		"scss": "scss --style expanded",
+		"shellscript": "bash",
+		"swift": "swift",
+		"typescript": "ts-node",
+		"vbscript": "cscript //Nologo"
+	},
+	"code-runner.runInTerminal": true,
+	"cSpell.userWords": [
+		"Arch",
+		"pacman",
+		"postgres",
+		"postgresql",
+		"Postgresql"
+	],
+	"cSpell.enableFiletypes": ["!jsonc"],
+	"cSpell.enabled": false,
+	"dimmer.opacity": 30,
+	"editor.bracketPairColorization.enabled": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll": true,
+		"source.organizeImports": true,
+		"trailing-spaces.deleteTrailingSpaces": true
+	},
+	"editor.fontFamily": "Cascadia Code, JetBrains Mono, Fira Code",
+	"editor.fontLigatures": true,
+	"editor.formatOnSave": true,
+	"editor.guides.bracketPairs": "active",
+	"editor.minimap.enabled": false,
+	"editor.mouseWheelZoom": true,
+	"editor.stickyScroll.enabled": true,
+	"editor.tabSize": 2,
+	"editor.wordWrap": "wordWrapColumn",
+	"emmet.includeLanguages": {
+		"javascript": "html",
+		"javascriptreact": "html",
+		"php": "html",
+		"xml": "html"
+	},
+	"files.exclude": {
+		"*.meta": true,
+		"*.sln": true,
+		"**/.classpath": true,
+		"**/.factorypath": true,
+		"**/.project": true,
+		"**/.settings": true,
+		"**/node_modules": true
+	},
+	"keyboard.dispatch": "keyCode",
+	"lifeline.clock.format": "h:mm A",
+	"markdown.extension.print.theme": "dark",
+	"prettier.singleQuote": false,
+	"prettier.tabWidth": 2,
+	"prettier.useTabs": true,
+	"security.workspace.trust.untrustedFiles": "open",
+	"telemetry.telemetryLevel": "off",
+	"terminal.integrated.defaultProfile.linux": "bash",
+	"terminal.integrated.defaultProfile.windows": "PowerShell",
+	"terminal.integrated.fontFamily": "Hack Nerd Font, Hack NF",
+	"terminal.integrated.fontSize": 14,
+	"window.openFilesInNewWindow": "on",
+	"window.openFoldersInNewWindow": "on",
+	"window.restoreWindows": "none",
+	"window.zoomLevel": 0,
+	"workbench.activityBar.visible": false,
+	"workbench.iconTheme": "icons",
+	"workbench.colorTheme": "Catppuccin Mocha",
+	"workbench.colorCustomizations": {
+		"editorIndentGuide.activeBackground": "#ffffff",
+		"tab.activeBackground": "#3C3C3C",
+		"tab.activeForeground": "#ffffff"
+	}
 }

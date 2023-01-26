@@ -4,7 +4,7 @@ call plug#begin('~/AppData/Local/nvim/plugged')
 " Themes
 Plug 'morhetz/gruvbox'
 Plug 'shinchu/lightline-gruvbox.vim'
-Plug 'joshdick/onedark.vim'			
+Plug 'joshdick/onedark.vim'
 Plug 'sainnhe/everforest'
 Plug 'sainnhe/sonokai'
 
