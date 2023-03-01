@@ -58,6 +58,7 @@
 	"cSpell.enableFiletypes": ["!jsonc"],
 	"cSpell.enabled": false,
 	"dimmer.opacity": 30,
+	"disable-hardware-acceleration": true,
 	"editor.bracketPairColorization.enabled": true,
 	"editor.codeActionsOnSave": {
 		"source.fixAll": true,
@@ -95,21 +96,24 @@
 	"prettier.tabWidth": 2,
 	"prettier.useTabs": true,
 	"security.workspace.trust.untrustedFiles": "open",
+	"tabout.disableByDefault": true,
 	"telemetry.telemetryLevel": "off",
 	"terminal.integrated.defaultProfile.linux": "bash",
 	"terminal.integrated.defaultProfile.windows": "PowerShell",
 	"terminal.integrated.fontFamily": "Hack Nerd Font, Hack NF",
 	"terminal.integrated.fontSize": 14,
-	"window.openFilesInNewWindow": "on",
+	"window.openFilesInNewWindow": "off",
 	"window.openFoldersInNewWindow": "on",
 	"window.restoreWindows": "none",
-	"window.zoomLevel": 0,
 	"workbench.activityBar.visible": false,
 	"workbench.iconTheme": "icons",
-	"workbench.colorTheme": "Catppuccin Mocha",
 	"workbench.colorCustomizations": {
 		"editorIndentGuide.activeBackground": "#ffffff",
 		"tab.activeBackground": "#3C3C3C",
 		"tab.activeForeground": "#ffffff"
-	}
+	},
+	"workbench.productIconTheme": "fluent-icons",
+	"workbench.colorTheme": "Ayu Dark Bordered",
+	"workbench.startupEditor": "none",
+	"update.showReleaseNotes": false
 }
