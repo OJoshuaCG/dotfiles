@@ -6,7 +6,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 if [[ -f ~/.dircolors ]] ; then
-    eval $(dircolors -b ~/.dircolors)     
+    eval $(dircolors -b ~/.dircolors)
 elif [[ -f /etc/DIR_COLORS ]] ; then
     eval $(dircolors -b /etc/DIR_COLORS)
 fi
@@ -28,19 +28,10 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh-sudo/sudo.plugin.zsh
 
-# - Aliases ---
-alias ls="lsd"
-alias cat="bat"
-alias cls="clear"
-alias s="kitty +kitten ssh"
-
-# - Environment Variable ---
-export CODES="/mnt/Data/codes/"
-export UAT="/mnt/Data/UAT/9no/"
-export CATFIG="/home/joshua/.config/kitty/kitty.conf"
-export P="-p49759"
-
 source ~/powerlevel10k/powerlevel10k.zsh-theme
+
+# - Exporting variables file (aliases, exports)
+[[ ! -f /usr/share/variables.conf ]] || source /usr/share/variables.conf
 
 # Home, Fin, Supr
 bindkey "^[[H" beginning-of-line

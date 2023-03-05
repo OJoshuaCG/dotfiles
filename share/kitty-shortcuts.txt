@@ -1,0 +1,16 @@
+# /usr/share/kitty-shortcuts.txt
+
+#: COMMANDS	# c+s -> ctrl+shift
+c+s+T		New tab
+c+s+Q		Close tab
+c+s+alt+T		Rename tab
+c+s+left or right	Move to tab...
+c+s+. or ,		Move position of tab...
+
+c+s+enter		New Window
+c+s+W		Close Window
+c+s+R		Enter into resize Window
+c+s+L		Organize Windows
+
+#: SOURCE
+https://sw.kovidgoyal.net/kitty/conf/
