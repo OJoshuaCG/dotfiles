@@ -1,0 +1,62 @@
+env:
+  TERM: xterm-256color
+
+import:
+  - ~/.config/alacritty/themes/Ayu.yml
+  #- ~/.config/alacritty/themes/CatppuccinFrappe.yml
+  #- ~/.config/alacritty/themes/CatppuccinMocha.yml
+  #- ~/.config/alacritty/themes/DoomOne.yml
+  #- ~/.config/alacritty/themes/Dracula.yml
+  #- ~/.config/alacritty/themes/EverforestDark.yml
+  #- ~/.config/alacritty/themes/GruvboxDark.yml
+  #- ~/.config/alacritty/themes/MonokaiPro.yml
+  #- ~/.config/alacritty/themes/Nightfox.yml
+  #- ~/.config/alacritty/themes/Nord.yml
+  #- ~/.config/alacritty/themes/Palenight.yml
+  #- ~/.config/alacritty/themes/TokyoNight.yml
+  #- ~/.config/alacritty/themes/TokyoNightStorm.yml
+  #- ~/.config/alacritty/themes/TomorrowNight.yml
+
+window:
+  padding:
+    x: 10
+    y: 10
+
+  # full or none
+  decorations: full
+
+  opacity: 0.98
+
+scrolling:
+  history: 1000
+  # scrolling distance multiplier
+  multiplier: 3
+
+font:
+  normal:
+    family: JetBrains Mono
+    style: Regular
+  size: 11.0
+
+draw_bold_text_with_bright_colors: true
+
+cursor:
+  style:
+    # ▇ block, _ underline, | beam
+    shape: Beam
+    # Never, Off, On, Always
+    blinking: Off
+
+  #blink_interval: 750
+  #blink_timeout: 5
+  #unfocused_hollow: true
+
+  # 0.0 to 1.0
+  thickness: 0.15
+
+live_config_reload: true
+
+shell:
+  program: /bin/bash
+
+working_directory: None

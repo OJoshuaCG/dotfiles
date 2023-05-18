@@ -1,0 +1,2 @@
+- https://github.com/catppuccin/alacritty
+- https://gitlab.com/dwt1/dotfiles/-/blob/master/.config/alacritty/alacritty.yml
