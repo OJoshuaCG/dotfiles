@@ -40,4 +40,21 @@ echo "    |--- alacritty files finished!"
 
 # ==========
 
+APP="konsole"
+FOLDER="~/.local/share/${APP}"
+CONF_FILE="konsole.profile"
+
+echo "    |- konsole files..."
+[ ! -d $FOLDER ] && mkdir $FOLDER
+
+if [ -f "${FOLDER}/${CONF_FILE}" ]
+then
+  mv "${FOLDER}/${CONF_FILE}" "${FOLDER}/${CONF_FILE}.backup"
+fi
+
+cp -r "./config/${APP}/" $FOLDER
+echo "    |--- konsole files finished!"
+
+# ==========
+
 echo " >_ Success!"

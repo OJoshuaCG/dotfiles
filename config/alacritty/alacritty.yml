@@ -2,13 +2,15 @@ env:
   TERM: xterm-256color
 
 import:
-  - ~/.config/alacritty/themes/Ayu.yml
+  #- ~/.config/alacritty/themes/Ayu.yml
   #- ~/.config/alacritty/themes/CatppuccinFrappe.yml
   #- ~/.config/alacritty/themes/CatppuccinMocha.yml
   #- ~/.config/alacritty/themes/DoomOne.yml
   #- ~/.config/alacritty/themes/Dracula.yml
   #- ~/.config/alacritty/themes/EverforestDark.yml
   #- ~/.config/alacritty/themes/GruvboxDark.yml
+  #- ~/.config/alacritty/themes/KaolinAurora.yml
+  - ~/.config/alacritty/themes/KaolinDark.yml
   #- ~/.config/alacritty/themes/MonokaiPro.yml
   #- ~/.config/alacritty/themes/Nightfox.yml
   #- ~/.config/alacritty/themes/Nord.yml
