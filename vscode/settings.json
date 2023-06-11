@@ -14,13 +14,6 @@
 	"[markdown]": {
 		"editor.defaultFormatter": "yzhang.markdown-all-in-one"
 	},
-	"auto-rename-tag.activationOnLanguage": [
-		"html",
-		"javascript",
-		"javascriptreact",
-		"php",
-		"xml"
-	],
 	"breadcrumbs.enabled": true,
 	"code-runner.executorMap": {
 		"bat": "cmd /c",
@@ -30,7 +23,7 @@
 		"dart": "dart",
 		"fsharp": "fsi",
 		"go": "go run",
-		"java": "cd $dir && javac $fileName && cls && java $fileNameWithoutExt ",
+		"java": "cd $dir && javac $fileName && clear && java $fileNameWithoutExt ",
 		"javascript": "node",
 		"lua": "lua",
 		"objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
@@ -65,10 +58,13 @@
 		"source.organizeImports": true,
 		"trailing-spaces.deleteTrailingSpaces": true
 	},
+	"editor.cursorBlinking": "expand",
+	"editor.cursorSmoothCaretAnimation": "on",
 	"editor.fontFamily": "Cascadia Code, JetBrains Mono, Fira Code",
 	"editor.fontLigatures": true,
 	"editor.formatOnSave": true,
 	"editor.guides.bracketPairs": "active",
+	"editor.linkedEditing": true,
 	"editor.minimap.enabled": false,
 	"editor.mouseWheelZoom": true,
 	"editor.stickyScroll.enabled": true,
@@ -96,7 +92,7 @@
 	"prettier.tabWidth": 2,
 	"prettier.useTabs": true,
 	"security.workspace.trust.untrustedFiles": "open",
-	"tabout.disableByDefault": true,
+	"tabout.disableByDefault": false,
 	"telemetry.telemetryLevel": "off",
 	"terminal.integrated.defaultProfile.linux": "bash",
 	"terminal.integrated.defaultProfile.windows": "PowerShell",
@@ -105,7 +101,7 @@
 	"window.openFilesInNewWindow": "off",
 	"window.openFoldersInNewWindow": "on",
 	"window.restoreWindows": "none",
-	"workbench.activityBar.visible": false,
+	"workbench.activityBar.visible": true,
 	"workbench.iconTheme": "icons",
 	"workbench.colorCustomizations": {
 		"editorIndentGuide.activeBackground": "#ffffff",
@@ -113,7 +109,7 @@
 		"tab.activeForeground": "#ffffff"
 	},
 	"workbench.productIconTheme": "fluent-icons",
-	"workbench.colorTheme": "Ayu Dark Bordered",
 	"workbench.startupEditor": "none",
-	"update.showReleaseNotes": false
+	"update.showReleaseNotes": false,
+	"workbench.colorTheme": "Ayu Dark Bordered"
 }

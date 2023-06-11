@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo " >_ Running..."
-
+sleep 2
 # ==========
 
 APP="kitty"
@@ -19,7 +19,7 @@ fi
 cp "./config/${APP}/${CONF_FILE}" $FOLDER
 cp -r "./config/${APP}/themes" $FOLDER
 echo "    |--- kitty files finished!"
-
+sleep 2
 # ==========
 
 APP="alacritty"
@@ -37,7 +37,7 @@ fi
 cp "./config/${APP}/${CONF_FILE}" $FOLDER
 cp -r "./config/${APP}/themes" $FOLDER
 echo "    |--- alacritty files finished!"
-
+sleep 2
 # ==========
 
 APP="konsole"
@@ -54,7 +54,7 @@ fi
 
 cp -r "./config/${APP}/" $FOLDER
 echo "    |--- konsole files finished!"
-
+sleep 2
 # ==========
 
 echo " >_ Success!"
