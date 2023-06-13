@@ -16,11 +16,11 @@ colors:
     white:    '#e6e6e8'
 
   bright:
-    black:    '#454459',
-    red:      '#cd5c60',
-    green:    '#7CF083',
-    yellow:   '#dbac66',
-    blue:     '#91b9c7',
-    magenta:  '#6E6884',
-    cyan:     '#0D9C94',
-    white:    '#f2f2f2',
+    black:    '#454459'
+    red:      '#cd5c60'
+    green:    '#7CF083'
+    yellow:   '#dbac66'
+    blue:     '#91b9c7'
+    magenta:  '#6E6884'
+    cyan:     '#0D9C94'
+    white:    '#f2f2f2'

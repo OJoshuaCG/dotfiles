@@ -47,7 +47,7 @@ cursor:
     # ▇ block, _ underline, | beam
     shape: Beam
     # Never, Off, On, Always
-    blinking: Off
+    blinking: On
 
   #blink_interval: 750
   #blink_timeout: 5

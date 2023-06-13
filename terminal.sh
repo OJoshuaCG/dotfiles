@@ -1,60 +1,61 @@
-#!/bin/bash
+#!/usr/bin/env bash
+### or !/bin/bash
 
 echo " >_ Running..."
-sleep 2
+
 # ==========
 
-APP="kitty"
-FOLDER="~/.config/${APP}"
-CONF_FILE="kitty.conf"
+APP=kitty
+DIR=$HOME/.config/$APP
+FILE=kitty.conf
 
-echo "    |- kitty files..."
-[ ! -d $FOLDER ] && mkdir $FOLDER
+echo "    |- ${APP} files..."
+[ ! -d $DIR ] && mkdir $DIR
 
-if [ -f "${FOLDER}/${CONF_FILE}" ]
+if [ -f $DIR/$FILE ]
 then
-  mv "${FOLDER}/${CONF_FILE}" "${FOLDER}/${CONF_FILE}.backup"
+  mv $DIR/$FILE $DIR/$FILE.backup
 fi
 
-cp "./config/${APP}/${CONF_FILE}" $FOLDER
-cp -r "./config/${APP}/themes" $FOLDER
-echo "    |--- kitty files finished!"
-sleep 2
+cp ./config/$APP/$FILE $DIR
+cp -r ./config/$APP/themes $DIR
+echo "    |--- ${APP} files finished!"
+
 # ==========
 
 APP="alacritty"
-FOLDER="~/.config/${APP}"
-CONF_FILE="alacritty.yml"
+DIR=$HOME/.config/$APP
+FILE="alacritty.yml"
 
-echo "    |- alacritty files..."
-[ ! -d $FOLDER ] && mkdir $FOLDER
+echo "    |- ${APP} files..."
+[ ! -d $DIR ] && mkdir $DIR
 
-if [ -f "${FOLDER}/${CONF_FILE}" ]
+if [ -f $DIR/$FILE ]
 then
-  mv "${FOLDER}/${CONF_FILE}" "${FOLDER}/${CONF_FILE}.backup"
+  mv $DIR/$FILE $DIR/$FILE.backup
 fi
 
-cp "./config/${APP}/${CONF_FILE}" $FOLDER
-cp -r "./config/${APP}/themes" $FOLDER
-echo "    |--- alacritty files finished!"
-sleep 2
+cp ./config/$APP/$FILE $DIR
+cp -r ./config/$APP/themes $DIR
+echo "    |--- ${APP} files finished!"
+
 # ==========
 
 APP="konsole"
-FOLDER="~/.local/share/${APP}"
-CONF_FILE="konsole.profile"
+DIR=$HOME/.local/share/$APP
+FILE="konsole.profile"
 
-echo "    |- konsole files..."
-[ ! -d $FOLDER ] && mkdir $FOLDER
+echo "    |- ${APP} files..."
+[ ! -d $DIR ] && mkdir $DIR
 
-if [ -f "${FOLDER}/${CONF_FILE}" ]
+if [ -f $DIR/$FILE ]
 then
-  mv "${FOLDER}/${CONF_FILE}" "${FOLDER}/${CONF_FILE}.backup"
+  mv $DIR/$FILE $DIR/$FILE.backup
 fi
 
-cp -r "./config/${APP}/" $FOLDER
-echo "    |--- konsole files finished!"
-sleep 2
+cp -r ./config/$APP/. $DIR
+echo "    |--- ${APP} files finished!"
+
 # ==========
 
 echo " >_ Success!"
