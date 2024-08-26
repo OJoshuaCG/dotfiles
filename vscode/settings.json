@@ -8,11 +8,18 @@
 	"[javascriptreact]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
+	"[json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
 	"[jsonc]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
 	"[markdown]": {
 		"editor.defaultFormatter": "yzhang.markdown-all-in-one"
+	},
+	"[python]": {
+		"editor.defaultFormatter": "ms-python.black-formatter",
+		"editor.formatOnSave": true
 	},
 	"breadcrumbs.enabled": true,
 	"code-runner.executorMap": {
@@ -41,6 +48,10 @@
 		"vbscript": "cscript //Nologo"
 	},
 	"code-runner.runInTerminal": true,
+	"cSpell.enabled": false,
+	"cSpell.enableFiletypes": [
+		"!jsonc"
+	],
 	"cSpell.userWords": [
 		"Arch",
 		"pacman",
@@ -48,28 +59,28 @@
 		"postgresql",
 		"Postgresql"
 	],
-	"cSpell.enableFiletypes": ["!jsonc"],
-	"cSpell.enabled": false,
+	"dateTime.showDayOfMonth": true,
+	"dateTime.showMonth": true,
 	"dimmer.opacity": 30,
 	"disable-hardware-acceleration": true,
+	"dotnet.codeLens.enableReferencesCodeLens": false,
 	"editor.bracketPairColorization.enabled": true,
 	"editor.codeActionsOnSave": {
-		"source.fixAll": true,
-		"source.organizeImports": true,
-		"trailing-spaces.deleteTrailingSpaces": true
+		"source.fixAll": "explicit",
+		"source.organizeImports": "explicit"
 	},
 	"editor.cursorBlinking": "expand",
 	"editor.cursorSmoothCaretAnimation": "on",
-	"editor.fontFamily": "Cascadia Code, JetBrains Mono, Fira Code",
+	"editor.fontFamily": "Source Code Pro, Geist Mono, Cascadia Code, JetBrains Mono, Fira Code",
 	"editor.fontLigatures": true,
-	"editor.formatOnSave": true,
-	"editor.glyphMargin": false,
+	"editor.formatOnSave": false,
+	"editor.glyphMargin": true,
 	"editor.guides.bracketPairs": "active",
 	"editor.linkedEditing": true,
 	"editor.minimap.enabled": false,
 	"editor.mouseWheelZoom": true,
 	"editor.stickyScroll.enabled": true,
-	"editor.tabSize": 2,
+	"editor.tabSize": 4,
 	"editor.wordWrap": "wordWrapColumn",
 	"emmet.includeLanguages": {
 		"javascript": "html",
@@ -78,20 +89,27 @@
 		"xml": "html"
 	},
 	"files.exclude": {
-		"*.meta": true,
-		"*.sln": true,
 		"**/.classpath": true,
 		"**/.factorypath": true,
 		"**/.project": true,
 		"**/.settings": true,
-		"**/node_modules": true
+		"**/node_modules": true,
+		"*.meta": true,
+		"*.sln": true
 	},
 	"keyboard.dispatch": "keyCode",
-	"lifeline.clock.format": "h:mm A",
+	"lifeline.battery.interval": 10000,
+	"lifeline.clock.format": "DD MMM h:mm A",
 	"markdown.extension.print.theme": "dark",
 	"prettier.singleQuote": false,
 	"prettier.tabWidth": 2,
 	"prettier.useTabs": true,
+	"search.exclude": {
+		"**/*.code-search": true,
+		"**/bower_components": true,
+		"**/node_modules": true,
+		"**/venv": true
+	},
 	"security.workspace.trust.untrustedFiles": "open",
 	"tabout.disableByDefault": false,
 	"telemetry.telemetryLevel": "off",
@@ -99,18 +117,21 @@
 	"terminal.integrated.defaultProfile.windows": "PowerShell",
 	"terminal.integrated.fontFamily": "Hack Nerd Font, Hack NF",
 	"terminal.integrated.fontSize": 14,
+	"trailing-spaces.trimOnSave": true,
+	"update.showReleaseNotes": false,
 	"window.openFilesInNewWindow": "off",
 	"window.openFoldersInNewWindow": "on",
 	"window.restoreWindows": "none",
-	"workbench.activityBar.visible": true,
-	"workbench.iconTheme": "icons",
+	"window.zoomLevel": -1.00,
+	"workbench.activityBar.location": "default",
 	"workbench.colorCustomizations": {
-		"editorIndentGuide.activeBackground": "#ffffff",
+		"editorIndentGuide.activeBackground1": "#ffffff",
 		"tab.activeBackground": "#3C3C3C",
 		"tab.activeForeground": "#ffffff"
 	},
+	"workbench.colorTheme": "Catppuccin Macchiato",
+	"workbench.iconTheme": "icons",
 	"workbench.productIconTheme": "fluent-icons",
-	"workbench.startupEditor": "none",
-	"update.showReleaseNotes": false,
-	"workbench.colorTheme": "Ayu Dark Bordered"
+	"workbench.sideBar.location": "right",
+	"workbench.startupEditor": "none"
 }
